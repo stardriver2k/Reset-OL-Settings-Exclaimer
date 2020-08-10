@@ -21,14 +21,12 @@ IF EXIST "%PROGRAMFILES(X86)%" (GOTO 64BIT) ELSE (GOTO 32BIT)
 
 :64BIT
 echo 64-bit Betriebssystem gefunden...
-"C:\Program Files\Microsoft Office\Office15\OUTLOOK.EXE"
-"C:\Program Files\Microsoft Office\Office16\OUTLOOK.EXE" 
+"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\outlook.lnk"
 GOTO END
 
 :32BIT
 echo 32-bit Betriebssystem gefunden...
-"C:\Program Files (x86)\Microsoft Office\Office15\OUTLOOK.EXE" 
-"C:\Program Files (x86)\Microsoft Office\Office16\OUTLOOK.EXE"
+"C:\ProgramData\Microsoft\Windows\Start Menu\Programs\outlook.lnk"
 GOTO END
 
 :END
